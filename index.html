@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" lang="javascript">
+
+
+$(document).ready(function()
+{
+   $("#submit").click(function()
+    {
+    var output="admit id="+$("#admission").val()+"&PatientName="+$("#PatientName").val()+"&phoneno="+$("#phoneno").val()+"&Blood group="+$("#Bloodgroup").val();
+     alert(output);
+    });
+ $("#reset").click(function()
+    {
+ var output="admit id="+$("#admission").val('')+"&PatientName="+$("#PatientName").val('')+"&phoneno="+$("#phoneno").val('')+"&Blood group="+$("#Bloodgroup").val('');
+    alert(output);
+    });
+});
+
+</script>
+</head>
+<body>
+<table id="Hospitol" border="1">
+<tr>
+   <td>Admission</td>
+  <td>PatientName</td>
+  <td>phoneno</td>
+  <td>Blood group</td>
+</tr>
+<tr>
+     <td>  <input type="text" id="admission"></input></td>
+     <td> <input type="text" id="PatientName"></input></td>
+     <td> <input type="text" id="phoneno"></input></td>
+     <td> <input type="text" id="Bloodgroup"></input></td>
+
+
+</tr>
+ <tr>
+     <td>  <input type="text" id="admission"></input></td>
+     <td> <input type="text" id="PatientName"></input></td>
+     <td> <input type="text" id="phoneno"></input></td>
+     <td> <input type="text" id="Bloodgroup"></input></td>
+
+
+</tr>
+</table>
+<br></br>
+
+ submit:   <input type="button" id="submit" label="Submit" value="Submit" />
+ reset:   <input type="button" id="reset" label="Reset" value="Reset" />
+
+      
+</body>
+</html>
